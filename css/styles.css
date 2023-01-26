@@ -1,0 +1,214 @@
+/*{
+    margin: 0;
+    padding: 0;
+}*/
+html{
+    font-size: 62.5%;
+}
+
+body{
+    background-image: url(file:///home/maria/workspace/Coder/workboock/img/patitas.png);
+}
+
+#grilla-galeria {
+display: grid;
+    grid-template-areas: 
+    "cabecera"
+    "carousel"
+    "descripcion"
+    "fotos"
+    "footer";
+    grid-template-columns: 1fr;
+}
+
+@media screen and (min-width:768px) {  
+
+    #grilla-galeria {
+        display: grid;
+        grid-template-areas:
+        "cabecera cabecera"
+        "carousel descripcion"
+        "fotos fotos"
+        "footer footer";
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 100px 3fr 3fr 100px; 
+        grid-template-columns: 50%  50%;
+
+        column-gap: 10px;
+        row-gap: 10px;
+    }
+}
+
+section.inicio{
+    grid-area: cabecera;
+    background-color: rgb(39, 36, 36);
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3rem;
+    
+}
+/*
+@media screen and (min-width:768px) {
+    .inicio {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+*/
+a{
+    text-decoration: none;
+}
+/*logo*/
+.pichos{
+    display: block;
+    margin: 0 auto;
+    width: 100px;
+    padding: 20px;
+}
+
+/*titulos*/
+h1{
+    color: red;
+    font-weight:bolder;
+    text-align: center;
+    font-size: x-large;
+}
+
+h2{
+    padding: 10px 20px;
+}
+
+/*index*/
+#grilla-index {
+    display: grid;
+        grid-template-areas: 
+        "cabecera"
+        "contenido"
+        "footer";
+        grid-template-columns: 1fr;
+    }
+
+section.contenido{
+    grid-area: contenido;
+    background-color: white;
+    background-size: cover;
+    width: 450px;
+    height: 400px;
+    margin: 3rem;
+}
+
+/*tarjeta index*/
+.contenido__imagen{
+    width: 400px;
+    background-color: white;
+    margin: 2rem;
+
+    
+}
+
+.contenido__introducción{
+    color:#011638;
+    font-weight: bolder;
+    font-size: 2rem;
+    padding: 2rem;
+    
+
+}
+
+iframe{
+    padding:10px 200px ;  
+}
+
+/*accesorios--> video*/
+.cuidados__tex{
+    position: absolute;
+    top: 25rem;
+    left: 80rem;
+    color:#011638;
+    font-weight: bolder;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 2rem;
+    
+}
+/*galeria*/
+
+section#carouselgrid {
+    grid-area:carousel;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+section#descripcion {
+    grid-area: descripcion;  
+    display: flex;
+    justify-content: center;   
+}
+.carousel{
+    width: 20rem;
+    padding-left: 20px;
+    display: flex;
+    justify-content: center;
+    
+    
+}
+section#fotos{
+    grid-area: fotos;
+}
+
+@media screen and (min-width:768px) {
+    #fotos {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        column-gap: 1rem;
+    }
+}
+
+
+.fotos {
+    width: 24rem;
+    height: 27rem;
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+
+/*contacto*/
+.contacto{
+    width: 500px;
+    padding:10px 10px;
+    max-width: 100%;
+}
+.mapa{
+    width: 400px;
+    padding: 10px 10px;
+}
+
+/*todos los footer*/
+#footer{
+    grid-area: footer;
+    background-color: rgb(39, 36, 36);
+    width: 100%;
+    font-size: medium;
+    padding: 8px;
+}
+
+.opciones{
+    color: white;
+    text-decoration: none;
+    font-style:normal;
+    font-weight: bold;
+}
+
+.opciones a{
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: medium;
+}
