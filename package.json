@@ -1,0 +1,19 @@
+{
+  "name": "pre-entrega1_maria-de-feo-villagra",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/programroll/2-pre-entrega.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/programroll/2-pre-entrega/issues"
+  },
+  "homepage": "https://github.com/programroll/2-pre-entrega#readme",
+  "description": ""
+}

@@ -1,0 +1,32 @@
+
+@import "inicio";
+@import "galeria";
+@import "biografia";
+
+
+
+
+/*accesorios--> video*/
+.cuidados__tex{
+    position: absolute;
+    top: 25rem;
+    left: 80rem;
+    color:#011638;
+    font-weight: bolder;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 2rem;
+    
+}
+
+
+/*contacto*/
+.contacto{
+    width: 500px;
+    padding:10px 10px;
+    max-width: 100%;
+}
+.mapa{
+    width: 400px;
+    padding: 10px 10px;
+}
+
