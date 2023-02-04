@@ -1,8 +1,10 @@
 
+@import "variables";
 @import "inicio";
 @import "galeria";
 @import "biografia";
 @import "accesorios";
+@import "contacto";
 
 
 
@@ -10,14 +12,6 @@
 
 
 
-/*contacto*/
-.contacto{
-    width: 500px;
-    padding:10px 10px;
-    max-width: 100%;
-}
-.mapa{
-    width: 400px;
-    padding: 10px 10px;
-}
+
+
 

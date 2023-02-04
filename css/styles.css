@@ -1,4 +1,7 @@
 @charset "UTF-8";
+/*Paleta de colores*/
+/*Tamaños de pantalla*/
+/*Tamaños de fuente*/
 /*{
     margin: 0;
     padding: 0;
@@ -7,27 +10,41 @@ html {
   font-size: 62.5%;
 }
 
-#inicio {
-  grid-area: cabecera;
-  width: 100%;
-  height: 200px;
-  /*z-index: 1;*/
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 2px;
-}
-
-/*
-@media screen and (min-width:768px) {
-    .navbar {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-}*/
 a {
   text-decoration: none;
 }
 
+.navbar {
+  width: 100%;
+  height: 100px;
+  /*z-index: 1;*/
+  margin-bottom: 2px;
+}
+
+.nav-link,
+.navbar-nav .nav-link.active {
+  color: white;
+  font-size: 20px;
+}
+.nav-link:hover,
+.navbar-nav .nav-link.active:hover {
+  color: #D7050F;
+}
+
+.navbar-toggler {
+  background-color: lightgrey;
+}
+
+.collapse {
+  /*background-color: $color-1;*/
+  padding-left: 10px;
+}
+
+@media (max-width: 768px) {
+  .collapse {
+    background-color: black;
+  }
+}
 /*logo*/
 .pichos {
   display: block;
@@ -38,30 +55,32 @@ a {
 
 /*titulos*/
 h1 {
-  color: red;
+  color: #D7050F;
   font-weight: bolder;
   text-align: center;
   font-size: x-large;
+  text-shadow: 2px 1px 4px #011638;
 }
 
 h2 {
   padding: 10px 20px;
 }
 
-/*index*/
+/*index
 #grilla-index {
-  display: grid;
-  grid-template-areas: "cabecera" "contenido" "footer";
-  grid-template-columns: 1fr;
-}
-
+    display: grid;
+    grid-template-areas: 
+    "cabecera"
+    "contenido"
+    "footer";
+    grid-template-columns: 1fr;
+}*/
 body {
   /*grid-area: body;*/
   background-image: url(file:///home/maria/workspace/Coder/workboock/img/patitas.png);
 }
 
 section.contenido {
-  grid-area: contenido;
   background-color: white;
   background-size: cover;
   width: 450px;
@@ -89,7 +108,6 @@ iframe {
 
 /*todos los footer*/
 #footer {
-  grid-area: footer;
   background-color: rgb(39, 36, 36);
   width: 100%;
   font-size: medium;
@@ -228,6 +246,9 @@ section#fotos {
 
 /*contacto*/
 .contacto {
+  border-style: outset outset solid solid;
+  border-radius: 20px;
+  background-color: #eaeaea;
   width: 500px;
   padding: 10px 10px;
   max-width: 100%;
