@@ -6,7 +6,7 @@
     justify-items: center;
     align-items: center;
     margin-top: 20px;
-    padding-left: 20px;
+    padding: 20px;
 }
 
 
@@ -34,7 +34,7 @@
 }
 
 .papel p{
-    margin: 2em;
+    margin: 1em;
 }
 
 
@@ -46,15 +46,18 @@
 }
 
 
-@media  (max-width:$tablet) {
+@media screen and (max-width:$tablet) {
+    .biografia{
+        padding: 5px;
+        
+    }
+    
     .cuaderno{
         display: grid;
         grid-template-areas: 
         "papel";
-        grid-template-columns: 1fr;
+        grid-template-columns:1fr;
         width: 100%;
-        margin-right: 2em;
-        margin-left: 1em;
     }
 
     .anillado{
@@ -63,5 +66,20 @@
     .biografia img {
         width: 287px;
         height: 300px;
+        margin-left: 1rem;
+    }
+}
+
+@media screen and (max-width:$desktop) {
+    .biografia{
+        padding: 5px;
+        
+    }
+    .cuaderno{
+        display: grid;
+        grid-template-areas: 
+        "papel";
+        grid-template-columns:1fr;
+        width: 100%;
     }
 }

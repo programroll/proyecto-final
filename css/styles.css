@@ -13,6 +13,7 @@ html {
 body {
   /*grid-area: body;*/
   background-image: url(file:///home/maria/workspace/Coder/workboock/img/patitas.png);
+  font-family: "Montserrat", sans-serif;
 }
 
 a {
@@ -42,7 +43,6 @@ a {
 .collapse {
   /*background-color: $color-1;*/
   padding-left: 10px;
-  z-index: 1;
 }
 
 @media (max-width: 768px) {
@@ -63,7 +63,7 @@ h1 {
   color: #D7050F;
   font-weight: bolder;
   text-align: center;
-  font-size: x-large;
+  font-size: 40px;
   text-shadow: 2px 1px 4px #011638;
 }
 
@@ -71,6 +71,58 @@ h2 {
   padding: 10px 20px;
 }
 
+.botones {
+  display: inline-block;
+  position: relative;
+  color: #011638;
+  background: #D7050F;
+  font-size: 17px;
+  font-weight: 500;
+  padding: 16px 24px;
+  margin: 20px;
+  border: 2px solid #011638;
+  border-radius: 8px;
+  z-index: 1;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.botones:before {
+  content: "";
+  position: absolute;
+  background: #011638;
+  height: 150px;
+  width: 300px;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.botones:hover {
+  color: lightgrey;
+}
+
+.botones:before {
+  top: 100%;
+  left: 100%;
+  transition: 0.7s;
+}
+
+.botones:hover:before {
+  top: -30px;
+  left: -30px;
+}
+
+.botones:active:before {
+  background: lightgrey;
+  transition: 0s;
+}
+
+@media screen and (min-width: 768px) {
+  .botones {
+    height: 75px;
+    width: 175px;
+  }
+}
 /*todos los footer*/
 #footer {
   background-color: rgb(39, 36, 36);
@@ -121,10 +173,6 @@ section.contenido {
   font-weight: bolder;
   font-size: 2rem;
   padding: 2rem;
-}
-
-iframe {
-  padding: 10px 200px;
 }
 
 /*galeria*/
@@ -238,7 +286,7 @@ section#fotos {
   justify-items: center;
   align-items: center;
   margin-top: 20px;
-  padding-left: 20px;
+  padding: 20px;
 }
 
 .cuaderno {
@@ -264,7 +312,7 @@ section#fotos {
 }
 
 .papel p {
-  margin: 2em;
+  margin: 1em;
 }
 
 .papel img {
@@ -274,14 +322,15 @@ section#fotos {
   margin-left: 10rem;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
+  .biografia {
+    padding: 5px;
+  }
   .cuaderno {
     display: grid;
     grid-template-areas: "papel";
     grid-template-columns: 1fr;
     width: 100%;
-    margin-right: 2em;
-    margin-left: 1em;
   }
   .anillado {
     display: none;
@@ -289,6 +338,18 @@ section#fotos {
   .biografia img {
     width: 287px;
     height: 300px;
+    margin-left: 1rem;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .biografia {
+    padding: 5px;
+  }
+  .cuaderno {
+    display: grid;
+    grid-template-areas: "papel";
+    grid-template-columns: 1fr;
+    width: 100%;
   }
 }
 /*accesorios--> video*/
@@ -314,17 +375,53 @@ section#fotos {
 
 /*contacto*/
 .contacto {
-  border-style: outset outset solid solid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contacto div {
+  width: 320px;
+  padding: 5px;
+}
+
+.caja {
   border-radius: 20px;
   background-color: #eaeaea;
-  width: 500px;
+  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.2);
+  width: auto;
   padding: 10px 10px;
-  max-width: 100%;
+}
+
+.caja__cuadro {
+  display: flex;
+  flex-direction: column;
+}
+
+.fieldset input {
+  border-radius: #011638;
 }
 
 .mapa {
-  width: 400px;
-  padding: 10px 10px;
+  width: 300px;
+  padding: 10px;
+}
+
+iframe {
+  padding: 10px 200px;
+}
+
+@media screen and (min-width: 768px) {
+  .contacto div {
+    width: 80%;
+    max-width: 1024px;
+  }
+  .mapa {
+    width: 400px;
+  }
+}
+.contacto p {
+  font-size: 20px;
 }
 
 /*# sourceMappingURL=styles.css.map */
