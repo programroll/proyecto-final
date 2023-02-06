@@ -1,65 +1,4 @@
-/*{
-    margin: 0;
-    padding: 0;
-}*/
-html{
-    font-size: 62.5%;
-}
-a{
-    text-decoration: none;
-}
 
-.navbar{
-    width: 100%;
-    height: 100px;
-    /*z-index: 1;*/
-    margin-bottom: 2px;
-}
-
-.nav-link,
-.navbar-nav .nav-link.active {
-    color: $color-2;
-    font-size: $icono;
-
-    &:hover {
-        color: $color-3;
-    }
-}
-
-.navbar-toggler{
-    background-color: $color-4;
-}
-.collapse{
-    /*background-color: $color-1;*/
-    padding-left: 10px;
-    
-}
-@media (max-width: $tablet){
-    .collapse{
-        background-color: $color-1;
-    }
-}
-
-/*logo*/
-.pichos{
-    display: block;
-    margin: 0 auto;
-    width: 100px;
-    padding: 20px;
-}
-
-/*titulos*/
-h1{
-    color: $color-3;
-    font-weight:bolder;
-    text-align: center;
-    font-size: x-large;
-    text-shadow: 2px 1px 4px  #011638;
-}
-
-h2{
-    padding: 10px 20px;
-}
 
 /*index
 #grilla-index {
@@ -71,10 +10,7 @@ h2{
     grid-template-columns: 1fr;
 }*/
 
-body{
-    /*grid-area: body;*/
-    background-image: url(file:///home/maria/workspace/Coder/workboock/img/patitas.png);
-}
+
 
 section.contenido{
     background-color: $color-2;
@@ -106,23 +42,4 @@ iframe{
     padding:10px 200px ;  
 }
 
-/*todos los footer*/
-#footer{
-    background-color: rgb(39, 36, 36);
-    width: 100%;
-    font-size: medium;
-    padding: 8px;
-}
 
-.opciones{
-    color: $color-2;
-    text-decoration: none;
-    font-style:normal;
-    font-weight: bold;
-}
-
-.opciones a{
-    color: $color-2;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: medium;
-}

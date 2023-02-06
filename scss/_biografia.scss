@@ -1,4 +1,67 @@
 .biografia {
- font-size: 2em;
- font-weight: bold;
+    font-size: 2em;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    margin-top: 20px;
+    padding-left: 20px;
+}
+
+
+.cuaderno{
+    width: 50%;
+    height: auto;
+    display: grid;
+    grid-template-areas:
+    "anillado papel";
+    grid-template-columns: 147px auto;
+    margin-bottom: 2em;
+
+}
+
+.anillado {
+    grid-area: anillado;
+    background-image: url(../img/hoja_anillado.png);
+    background-repeat: repeat-y;
+}
+.papel {
+    grid-area: papel;
+    background-image: url(../img/hoja_papel.png);
+    background-repeat: repeat;
+    box-shadow: 10px 5px 5px black;
+}
+
+.papel p{
+    margin: 2em;
+}
+
+
+.papel img{
+    width: 600px;
+    height: 634px;
+    margin-bottom: 2rem;
+    margin-left: 10rem;
+}
+
+
+@media  (max-width:$tablet) {
+    .cuaderno{
+        display: grid;
+        grid-template-areas: 
+        "papel";
+        grid-template-columns: 1fr;
+        width: 100%;
+        margin-right: 2em;
+        margin-left: 1em;
+    }
+
+    .anillado{
+        display: none;
+    }
+    .biografia img {
+        width: 287px;
+        height: 300px;
+    }
 }
