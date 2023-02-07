@@ -5,34 +5,41 @@
     align-items: center;
 }
 .contacto div{
-    width: 320px;
-    padding: 5px;
-}
+        width: 320px;
+        padding: 5px;
 
-.caja{
-    border-radius: 20px ;
-    background-color: #eaeaea;
-    box-shadow: 0px 15px 20px rgba( 0, 0, 0, .2);
-    width: auto;
-    padding:10px 10px;
-}
+        p{
+            font-size: $icono;
+        }
 
-.caja__cuadro{
-    display: flex;
-    flex-direction: column;
-}
+        form {
+        border-radius: 20px ;
+        background-color: #eaeaea;
+        box-shadow: 0px 15px 20px rgba( 0, 0, 0, .2);
+        width: auto;
+        padding:10px 10px;
 
-.fieldset input{
-    border-radius: $color-5;
-}
-.mapa{
-    width: 300px;
-    padding: 10px;
+            fieldset{
+                display: flex;
+                flex-direction: column;
+                
+                input, textarea{
+                    border: 2px solid $color-5;
+                    border-radius: 20px;
+                    margin-top: 5px;
+                }
+                .botones{
+                    
+                }
+            }
+        }
+    }
 
-}
-iframe{
-    padding:10px 200px ;  
-}
+    .mapa{
+        width: 300px;
+        padding: 10px;
+    
+    }
 
 @media screen and (min-width: $tablet) {
 
@@ -44,8 +51,4 @@ iframe{
     .mapa{
         width: 400px;
     }
-}
-
-.contacto p{
-    font-size: $icono;
 }

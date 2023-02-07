@@ -6,9 +6,10 @@ html{
     font-size: 62.5%;
 }
 body{
-    /*grid-area: body;*/
-    background-image: url(file:///home/maria/workspace/Coder/workboock/img/patitas.png);
+
+    background-image: url(../img/patitas.png);
     font-family: $fuentePrincipal;
+    //cursor: url(../img/cursor.png), auto;
 }
 
 a{

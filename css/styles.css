@@ -11,8 +11,7 @@ html {
 }
 
 body {
-  /*grid-area: body;*/
-  background-image: url(file:///home/maria/workspace/Coder/workboock/img/patitas.png);
+  background-image: url(../img/patitas.png);
   font-family: "Montserrat", sans-serif;
 }
 
@@ -384,31 +383,28 @@ section#fotos {
   width: 320px;
   padding: 5px;
 }
-
-.caja {
+.contacto div p {
+  font-size: 20px;
+}
+.contacto div form {
   border-radius: 20px;
   background-color: #eaeaea;
   box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.2);
   width: auto;
   padding: 10px 10px;
 }
-
-.caja__cuadro {
+.contacto div form fieldset {
   display: flex;
   flex-direction: column;
 }
-
-.fieldset input {
-  border-radius: #011638;
+.contacto div form fieldset input, .contacto div form fieldset textarea {
+  border: 2px solid #011638;
+  border-radius: 20px;
+  margin-top: 5px;
 }
-
 .mapa {
   width: 300px;
   padding: 10px;
-}
-
-iframe {
-  padding: 10px 200px;
 }
 
 @media screen and (min-width: 768px) {
@@ -419,9 +415,6 @@ iframe {
   .mapa {
     width: 400px;
   }
-}
-.contacto p {
-  font-size: 20px;
 }
 
 /*# sourceMappingURL=styles.css.map */
