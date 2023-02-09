@@ -28,6 +28,7 @@
         }
     }
 */
+/*
 section#carouselgrid {
     grid-area:carousel;
     display: flex;
@@ -40,8 +41,8 @@ section#descripcion {
     grid-area: descripcion;  
     display: flex;
     align-items: center;   
-}
-.carousel{
+}*/
+.carouselExampleFade{
     width: 20rem;
     padding-left: 20px;
     display: flex;
@@ -49,6 +50,29 @@ section#descripcion {
     
     
 }
+
+.eje-galeria{
+    @include estructura;
+}
+
+.carousel-inner {
+    width: 30rem;
+    height: 40rem;
+    overflow: hidden;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon  {
+    background-image: url(../img/huellas-flechas.png);
+    background-color: red;
+    width: 3rem;
+    height: 3rem;
+    border: solid;
+    border-radius: 20%;
+    border-color: red;
+    padding-left: 2rem ;
+}
+
+
 section#fotos{
     grid-area: fotos;
     display: flex;

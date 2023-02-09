@@ -54,6 +54,7 @@ a{
     padding: 20px;
 }
 
+
 /*titulos*/
 h1{
     color: $color-3;
@@ -124,7 +125,8 @@ transition: 0.5s;
 }
 
 .opciones{
-    color: $color-2;
+
+    //color: $color-2;
     text-decoration: none;
     font-style:normal;
     font-weight: bold;
@@ -132,6 +134,5 @@ transition: 0.5s;
 
 .opciones a{
     color: $color-2;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: medium;
 }
+

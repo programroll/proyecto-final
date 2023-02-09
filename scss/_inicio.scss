@@ -30,9 +30,10 @@ section.contenido{
 }
 
 .contenido__introducción{
+    @extend.biografia;
     color:#011638;
     font-weight: bolder;
-    font-size: 2rem;
+    
     padding: 2rem;
     
 

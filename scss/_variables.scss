@@ -16,3 +16,10 @@ $icono-chico: 40px;
 
 //tipo de fuente
 $fuentePrincipal: 'Montserrat', sans-serif;
+
+//mixin
+@mixin estructura{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

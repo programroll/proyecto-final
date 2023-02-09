@@ -131,7 +131,6 @@ h2 {
 }
 
 .opciones {
-  color: white;
   text-decoration: none;
   font-style: normal;
   font-weight: bold;
@@ -139,8 +138,6 @@ h2 {
 
 .opciones a {
   color: white;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-size: medium;
 }
 
 /*index
@@ -170,7 +167,6 @@ section.contenido {
 .contenido__introducción {
   color: #011638;
   font-weight: bolder;
-  font-size: 2rem;
   padding: 2rem;
 }
 
@@ -204,25 +200,48 @@ section.contenido {
         }
     }
 */
+/*
 section#carouselgrid {
-  grid-area: carousel;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 30px;
+    grid-area:carousel;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
 }
 
 section#descripcion {
-  grid-area: descripcion;
-  display: flex;
-  align-items: center;
-}
-
-.carousel {
+    grid-area: descripcion;  
+    display: flex;
+    align-items: center;   
+}*/
+.carouselExampleFade {
   width: 20rem;
   padding-left: 20px;
   display: flex;
   justify-content: center;
+}
+
+.eje-galeria {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.carousel-inner {
+  width: 30rem;
+  height: 40rem;
+  overflow: hidden;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  background-image: url(../img/huellas-flechas.png);
+  background-color: red;
+  width: 3rem;
+  height: 3rem;
+  border: solid;
+  border-radius: 20%;
+  border-color: red;
+  padding-left: 2rem;
 }
 
 section#fotos {
@@ -277,13 +296,13 @@ section#fotos {
     opacity: .8;
     transition: .5s ease ;
 }*/
-.biografia {
-  font-size: 2em;
-  font-weight: bold;
+.biografia, .contenido__introducción {
   display: flex;
   flex-direction: column;
-  justify-items: center;
   align-items: center;
+  font-size: 2em;
+  font-weight: bold;
+  justify-items: center;
   margin-top: 20px;
   padding: 20px;
 }
@@ -322,7 +341,7 @@ section#fotos {
 }
 
 @media screen and (max-width: 768px) {
-  .biografia {
+  .biografia, .contenido__introducción {
     padding: 5px;
   }
   .cuaderno {
@@ -334,14 +353,14 @@ section#fotos {
   .anillado {
     display: none;
   }
-  .biografia img {
+  .biografia img, .contenido__introducción img {
     width: 287px;
     height: 300px;
     margin-left: 1rem;
   }
 }
 @media screen and (max-width: 1024px) {
-  .biografia {
+  .biografia, .contenido__introducción {
     padding: 5px;
   }
   .cuaderno {
@@ -402,6 +421,13 @@ section#fotos {
   border-radius: 20px;
   margin-top: 5px;
 }
+.contacto div form fieldset input {
+  height: 30px;
+}
+.contacto div form fieldset .optgroup {
+  font-size: 20px;
+}
+
 .mapa {
   width: 300px;
   padding: 10px;

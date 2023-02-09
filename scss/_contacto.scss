@@ -1,8 +1,6 @@
 /*contacto*/
 .contacto{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include estructura;
 }
 .contacto div{
         width: 320px;
@@ -28,9 +26,13 @@
                     border-radius: 20px;
                     margin-top: 5px;
                 }
-                .botones{
-                    
+                input{
+                    height: 30px;
                 }
+                .optgroup{
+                    font-size: $icono;
+                }
+
             }
         }
     }
