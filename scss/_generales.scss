@@ -65,7 +65,6 @@ h1{
 }
 
 h2{
-
     padding: 10px 20px;
 }
 
@@ -117,7 +116,7 @@ transition: 0.5s;
 }
 
 /*todos los footer*/
-#footer{
+footer{
     background-color: rgb(39, 36, 36);
     width: 100%;
     font-size: medium;
@@ -126,7 +125,7 @@ transition: 0.5s;
 
 .opciones{
 
-    //color: $color-2;
+    color: $color-2;
     text-decoration: none;
     font-style:normal;
     font-weight: bold;
