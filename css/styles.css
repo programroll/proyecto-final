@@ -461,6 +461,7 @@ section#fotos {
   background-color: rgb(197, 131, 131);
   border-radius: 20px;
   margin: auto;
+  margin-top: 2em;
 }
 .advertencia p {
   color: black;
@@ -481,6 +482,9 @@ section#fotos {
 }
 .cuidados iframe {
   padding: 5px;
+  width: 315px;
+  height: 315px;
+  border-radius: 20px;
 }
 .cuidados p {
   color: #011638;
@@ -490,12 +494,17 @@ section#fotos {
   padding: 5px;
 }
 
+@media screen and (min-width: 1200px) {
+  .cuidados iframe {
+    width: 600px;
+  }
+}
 .tarjetas {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 2em;
-  gap: 2rem;
+  gap: 3rem;
 }
 .tarjetas .carousel {
   display: flex;
@@ -504,9 +513,18 @@ section#fotos {
   height: 500px;
 }
 
-#carouselAccesorios1, #carouselAccesorios2 {
+@media screen and (min-width: 768px) {
+  .tarjetas {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+}
+#carouselAccesorios1, #carouselAccesorios3, #carouselAccesorios2 {
   background-color: rgb(241, 236, 236);
+  border: solid 1px;
   border-radius: 20px;
+  box-shadow: 10px 5px 10px 5px #011638;
   max-width: 30rem;
   max-height: 50rem;
   color: #011638;
@@ -520,11 +538,17 @@ section#fotos {
   height: 32rem;
 }
 .carousel-inner img {
-  height: 60vh;
+  height: 28rem;
   margin-top: 3rem;
   border-radius: 20px;
 }
 
+/*
+@media screen and (min-width:2500) {
+    .carousel-inner img{
+        height: 35vh;
+    }
+}*/
 .carouselExampleFade {
   width: 20rem;
   padding-left: 20px;
@@ -543,7 +567,7 @@ section#fotos {
   height: 3rem;
   border: solid 3px;
   border-radius: 50%;
-  border-color: #011638;
+  border-color: #D7050F;
   padding-left: 2rem;
 }
 

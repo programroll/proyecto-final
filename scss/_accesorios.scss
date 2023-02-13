@@ -4,6 +4,7 @@
     background-color: rgb(197, 131, 131);
     border-radius: 20px;
     margin: auto;
+    margin-top: $bottom;
     
     p{
         color: $color-1;
@@ -26,6 +27,9 @@
 
     iframe{
         padding: 5px;
+        width: 315px;
+        height: 315px;
+        border-radius: 20px;
     }
     p{
         color:#011638;
@@ -34,33 +38,44 @@
         font-size: 2rem;
         padding: $left;
     }
-
-
-
+}
+@media screen and (min-width:$desktopXG) {
+    
+    .cuidados iframe{
+        width: 600px;
+    }
 }
 
 .tarjetas{
     @include estructura;
     margin-bottom: $bottom;
-    gap: 2rem;
+    gap: 3rem;
 
     .carousel{
 
         display: flex;
         flex-direction: column;
         align-items: center;
-
         height: 500px;
         
+    }
+}
+@media screen and (min-width: $tablet) {
+    .tarjetas{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
     }
 }
 
 #carouselAccesorios1{
     background-color: $color-4;
+    border: solid 1px;
     border-radius: 20px;
+    box-shadow: 10px 5px 10px 5px $color-5;
     max-width: 30rem;
     max-height: 50rem;
-    color:#011638;
+    color:$color-5;
     font-weight: bolder;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 2rem;
@@ -71,18 +86,26 @@
     @extend #carouselAccesorios1 ;
 }
 
+#carouselAccesorios3{
+    @extend #carouselAccesorios1 ;
+}
+
 .carousel-inner{
     height: 32rem;
 
-
     img{
-        height: 60vh;
+        height: 28rem;
         margin-top: 3rem;
         border-radius: 20px;
-
     }
-}
 
+}
+/*
+@media screen and (min-width:2500) {
+    .carousel-inner img{
+        height: 35vh;
+    }
+}*/
 .carouselExampleFade{
     width: 20rem;
     padding-left: 20px;
@@ -105,6 +128,6 @@
     height: 3rem;
     border: solid 3px;
     border-radius: 50%;
-    border-color: $color-5;
+    border-color: $color-3;
     padding-left: 2rem ;
 }
