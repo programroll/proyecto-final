@@ -1,7 +1,7 @@
 
 .inicio{
     background-image: none;
-    background-color: aqua;
+    background-color: $color-1;
 }
 
 //REVISAR
@@ -11,17 +11,30 @@
 
 main.inicio{
     @include estructura;
-    z-index: -1;
 }
-
 
 .container{
     //position: relative;
-    display: flex;
+    @include estructura;
     justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+    width: 100%;
+    //background-image: linear-gradient( 177deg, $color-3, $color-5);
+    margin-bottom: 2rem;
+
+
 }
+
+@media screen and (min-width: 767px){
+    .container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        height: 350px;
+        //background-image: linear-gradient(to right, $color-3, $color-5);
+    }
+
+}
+
 .container .box{
     position: relative;
     width: 20rem;
@@ -35,7 +48,6 @@ main.inicio{
 }
 .container .box:hover .content{
     transform: translate(0rem, 0rem);
-    background-color: black;
 }
 .imgBox{
     position: absolute;
@@ -46,6 +58,13 @@ main.inicio{
     z-index: 2;
     transition: all 0.5s ease-in-out;
 }
+.imgBox .ada{
+    box-shadow: 10px 5px 10px 5px $color-3;
+}
+.imgBox .pascal{
+    box-shadow: 10px 5px 10px 5px rgb(10, 10, 185);
+}
+
 .imgBox img{
     
     width: 20rem;
@@ -60,6 +79,7 @@ main.inicio{
     display: flex;
     align-items: flex-end;
     gap: 2rem;
+    background-color: black;
 
 }
 .content h2{
@@ -70,9 +90,10 @@ main.inicio{
 }
 .content span{
     margin: 1rem;
-    //margin-bottom: 1rem;
     font-size: 1.5em;
 }
+
+
 /*
 .ada-pascal{
 margin: 2rem;

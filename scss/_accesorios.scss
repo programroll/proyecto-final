@@ -1,22 +1,110 @@
 /*accesorios--> video*/
 .advertencia{
+    @include estructura;
     background-color: rgb(197, 131, 131);
-    border-radius: 30%;
+    border-radius: 20px;
+    margin: auto;
+    
+    p{
+        color: $color-1;
+        text-align: center;
+        font-size: $icono;
+    
+    }
+
+}
+@media screen and (min-width:$desktopXG) {
+    .advertencia{
+    max-width: $desktop;
+    }
+}
+
+
+.cuidados{
+    @include estructura;
+    margin-bottom: $bottom;
+
+    iframe{
+        padding: 5px;
+    }
+    p{
+        color:#011638;
+        font-weight: bolder;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 2rem;
+        padding: $left;
+    }
+
+
 
 }
 
-.mensaje{
-    color: black;
-    text-align: center;
+.tarjetas{
+    @include estructura;
+    margin-bottom: $bottom;
+    gap: 2rem;
+
+    .carousel{
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        height: 500px;
+        
+    }
 }
 
-.cuidados__tex{
-    position: absolute;
-    top: 25rem;
-    left: 80rem;
+#carouselAccesorios1{
+    background-color: $color-4;
+    border-radius: 20px;
+    max-width: 30rem;
+    max-height: 50rem;
     color:#011638;
     font-weight: bolder;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 2rem;
-    
+    padding: $left;
+}
+
+#carouselAccesorios2{
+    @extend #carouselAccesorios1 ;
+}
+
+.carousel-inner{
+    height: 32rem;
+
+
+    img{
+        height: 60vh;
+        margin-top: 3rem;
+        border-radius: 20px;
+
+    }
+}
+
+.carouselExampleFade{
+    width: 20rem;
+    padding-left: 20px;
+    display: flex;
+    justify-content: center;
+
+}
+
+
+
+/*.carousel-inner {
+
+    overflow: hidden;
+}*/
+
+.carousel-control-prev-icon, .carousel-control-next-icon  {
+    background-image: url(../img/huellas-flechas.png);
+    background-color: $color-3;
+    width: 3rem;
+    height: 3rem;
+    border: solid 3px;
+    border-radius: 50%;
+    border-color: $color-5;
+    padding-left: 2rem ;
 }
