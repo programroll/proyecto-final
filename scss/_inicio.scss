@@ -4,6 +4,7 @@
     background-color: $color-1;
 }
 
+
 //REVISAR
 .pie{
     background-color: none;
@@ -11,14 +12,51 @@
 
 main.inicio{
     @include estructura;
+    width: 320px;;
+    height: 400px;
+    margin-top: $bottom;
+    background-color: $color-4;
+
+    h1{
+        font-size: $icono-chico;
+    }
+    h2{
+        font-size: 30px;
+    }
+
+    p{
+        font-size:$icono;
+        padding:$left;
+        padding-bottom: 2em;
+        margin: 1em;
+    }
+}
+@media screen and (min-width: 767px){
+    main.inicio{
+    width: $desktop;
+    height: 700px;
+    margin-top:5em;
+    margin: auto;
+
+    h1{
+        font-size: 70px;
+    }
+    h2{
+        font-size: 60px;
+    }
+
+    p{
+        font-size:50px;
+    }
+    }
+
 }
 
+
 .container{
-    //position: relative;
     @include estructura;
     justify-content: center;
     width: 100%;
-    //background-image: linear-gradient( 177deg, $color-3, $color-5);
     margin-bottom: 2rem;
 
 
@@ -30,7 +68,6 @@ main.inicio{
         flex-direction: row;
         justify-content: space-evenly;
         height: 350px;
-        //background-image: linear-gradient(to right, $color-3, $color-5);
     }
 
 }
@@ -92,48 +129,4 @@ main.inicio{
     margin: 1rem;
     font-size: 1.5em;
 }
-
-
-/*
-.ada-pascal{
-margin: 2rem;
-padding: 2rem;
-gap: 2rem;
-}
-
-.ada-pascal img{
-    width: $img-movile;
-    height: $img-movile;
-}
-
-
-/*
-.contenido{
-    background-color: $color-2;
-    background-size: cover;
-    width: 320px;
-    height: 400px;
-    margin: 3rem;
-}
-
-/*tarjeta index
-.contenido__imagen{
-    width: $img-movile;
-    background-color: $color-2;
-    margin: 2rem;
-
-    
-}
-
-.contenido__introducción{
-    @extend.biografia;
-    color:#011638;
-    font-weight: bolder;
-    padding: 2rem;
-    
-
-}
-*/
-
-
 

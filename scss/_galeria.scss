@@ -1,58 +1,15 @@
-/*galeria*/
-/*#grilla-galeria {
-    display: grid;
-        grid-template-areas: 
-        "cabecera"
-        "carousel"
-        "descripcion"
-        "fotos"
-        "footer";
-        grid-template-columns: 1fr;
-    }
-    
-    @media screen and (min-width: $tablet) {  
-    
-        #grilla-galeria {
-            display: grid;
-            grid-template-areas:
-            "cabecera cabecera"
-            "carousel descripcion"
-            "fotos fotos"
-            "footer footer";
-            grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: 100px 3fr 3fr 100px; 
-            grid-template-columns: 50%  50%;
-    
-            column-gap: 10px;
-            row-gap: 10px;
-        }
-    }
-*/
-/*
-section#carouselgrid {
-    grid-area:carousel;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 30px;
-}
 
-section#descripcion {
-    grid-area: descripcion;  
-    display: flex;
-    align-items: center;   
-}*/
 .eje-galeria{
     @include estructura;
 }
-
+/*
 section#fotos{
     grid-area: fotos;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /*gap: 30px;*/
+    /*gap: 30px;
 }
 
 @media screen and (min-width:768px) {
@@ -60,37 +17,41 @@ section#fotos{
        /* display: grid;
         grid-template-columns: repeat(2, 1fr);
         justify-items: center;
-        column-gap: 1rem;*/
+        column-gap: 1rem;
         flex-direction: row;
         width: 600px;
         height: 400px;
     }
 }
 
-
+*/
 .fotos {
-    width: 24rem;
-    height: 27rem;
-    margin-top: 5px;
+    margin: $bottom;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 2rem;
+
+    img{
+        width: 24rem;
+        height: 27rem;
+        border-radius: 20px;
+        box-shadow: 10px 5px 10px 5px $color-5;
+    }
+    
+
 }
 
 @media screen and (min-width:$tablet) {
     .fotos {
-        width: 0px;
-        flex-grow: 1;
-        object-fit: cover;
-        opacity: .8;
-        transition: .2s ease ;
-    
-        & :hover {
-            cursor: crosshair;
-            width: 24rem;
-            opacity: 1;
-            /*filter: contrast(120%);*/
+        display: flex;
+        flex-flow: row wrap;
+        max-width: $desktop;
+        img{
+            width: 35rem;
+            height: 40rem;
+            border-radius: 20px;
+            box-shadow: 10px 5px 10px 5px $color-5;
         }
     }
 }
