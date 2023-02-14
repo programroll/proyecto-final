@@ -37,11 +37,12 @@
         }
     }
 
-    .mapa{
-        width: 300px;
-        padding: 10px;
-    
-    }
+.mapa{
+    width:100%;
+    padding: 10px;
+    border-radius: 20px;
+
+}
 
 @media screen and (min-width: $tablet) {
 

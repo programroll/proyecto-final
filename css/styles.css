@@ -327,8 +327,8 @@ section#fotos{
     max-width: 1024px;
   }
   .fotos img {
-    width: 35rem;
-    height: 40rem;
+    width: 20rem;
+    height: 26rem;
     border-radius: 20px;
     box-shadow: 10px 5px 10px 5px #011638;
   }
@@ -570,8 +570,9 @@ section#fotos{
 }
 
 .mapa {
-  width: 300px;
+  width: 100%;
   padding: 10px;
+  border-radius: 20px;
 }
 
 @media screen and (min-width: 768px) {
