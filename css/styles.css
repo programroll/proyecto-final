@@ -167,6 +167,7 @@ main.inicio {
   height: 400px;
   margin-top: 2em;
   background-color: rgb(241, 236, 236);
+  border-radius: 20px;
 }
 main.inicio h1 {
   font-size: 40px;
@@ -283,29 +284,6 @@ main.inicio p {
   align-items: center;
 }
 
-/*
-section#fotos{
-    grid-area: fotos;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    /*gap: 30px;
-}
-
-@media screen and (min-width:768px) {
-    section#fotos {
-       /* display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        justify-items: center;
-        column-gap: 1rem;
-        flex-direction: row;
-        width: 600px;
-        height: 400px;
-    }
-}
-
-*/
 .fotos {
   margin: 2em;
   display: flex;
@@ -317,7 +295,6 @@ section#fotos{
   width: 24rem;
   height: 27rem;
   border-radius: 20px;
-  box-shadow: 10px 5px 10px 5px #011638;
 }
 
 @media screen and (min-width: 768px) {
@@ -330,16 +307,8 @@ section#fotos{
     width: 20rem;
     height: 26rem;
     border-radius: 20px;
-    box-shadow: 10px 5px 10px 5px #011638;
   }
 }
-/*section img{
-    width: 0px;
-    flex-grow: 1;
-    object-fit: cover;
-    opacity: .8;
-    transition: .5s ease ;
-}*/
 .biografia {
   display: flex;
   flex-direction: column;
@@ -504,12 +473,6 @@ section#fotos{
   border-radius: 20px;
 }
 
-/*
-@media screen and (min-width:2500) {
-    .carousel-inner img{
-        height: 35vh;
-    }
-}*/
 .carouselExampleFade {
   width: 20rem;
   padding-left: 20px;
@@ -517,10 +480,6 @@ section#fotos{
   justify-content: center;
 }
 
-/*.carousel-inner {
-
-    overflow: hidden;
-}*/
 .carousel-control-prev-icon, .carousel-control-next-icon {
   background-image: url(../img/huellas-flechas.png);
   background-color: #D7050F;
@@ -539,34 +498,41 @@ section#fotos{
   align-items: center;
 }
 
-.contacto div {
+.contacto section {
   width: 320px;
   padding: 5px;
+  border-radius: 20px;
+  background-color: rgba(234, 234, 234, 0.7);
+  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.2);
+  margin-bottom: 2em;
 }
-.contacto div p {
+.contacto section div p {
   font-size: 20px;
 }
-.contacto div form {
-  border-radius: 20px;
-  background-color: #eaeaea;
-  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.2);
+.contacto section div form {
   width: auto;
   padding: 10px 10px;
 }
-.contacto div form fieldset {
+.contacto section div form fieldset {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
-.contacto div form fieldset input, .contacto div form fieldset textarea {
+.contacto section div form fieldset input, .contacto section div form fieldset textarea {
+  width: 100%;
   border: 2px solid #011638;
   border-radius: 20px;
   margin-top: 5px;
+  font-size: 2rem;
 }
-.contacto div form fieldset input {
+.contacto section div form fieldset .foco {
+  transition: all 2s;
+}
+.contacto section div form fieldset .foco:focus {
+  box-shadow: 5px 5px 5px 5px #011638;
+}
+.contacto section div form fieldset input {
   height: 30px;
-}
-.contacto div form fieldset .optgroup {
-  font-size: 20px;
 }
 
 .mapa {
@@ -576,12 +542,9 @@ section#fotos{
 }
 
 @media screen and (min-width: 768px) {
-  .contacto div {
+  .contacto section {
     width: 80%;
     max-width: 1024px;
-  }
-  .mapa {
-    width: 400px;
   }
 }
 
