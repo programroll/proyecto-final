@@ -249,11 +249,11 @@ main.bienvenidos p {
 }
 
 .imgBox .ada {
-  box-shadow: 10px 5px 10px 5px #D7050F;
+  box-shadow: 2px 2px 37px 2px #D7050F;
 }
 
 .imgBox .pascal {
-  box-shadow: 10px 5px 10px 5px rgb(10, 10, 185);
+  box-shadow: 2px 2px 37px 2px rgb(10, 10, 185);
 }
 
 .imgBox img {
@@ -276,7 +276,7 @@ main.bienvenidos p {
 .content h2 {
   display: inline;
   margin: 1rem;
-  margin-left: 10px;
+  margin-left: 8px;
   padding: 4px;
 }
 
