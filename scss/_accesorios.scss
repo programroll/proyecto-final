@@ -5,6 +5,7 @@
     border-radius: 20px;
     margin: auto;
     margin-top: $bottom;
+
     
     p{
         color: $color-1;
@@ -39,14 +40,26 @@
         padding: $left;
     }
 }
-@media screen and (min-width:$desktopXG) {
+
+@media screen and (min-width:$tablet){
+    
+    .cuidados iframe{
+        width: 500px;
+    }
+}
+@media screen and (min-width:$desktop){
     
     .cuidados iframe{
         width: 600px;
     }
 }
 
-.tarjetas{
+.item-group {
+    --xyz-translate-y: -350%;
+    --xyz-ease: cubic-bezier(0.5, -1.5, 0.5, 1.5);
+}
+
+.tarjetas .item-group{
     @include estructura;
     margin-bottom: $bottom;
     gap: 3rem;
@@ -61,7 +74,7 @@
     }
 }
 @media screen and (min-width: $tablet) {
-    .tarjetas{
+    .tarjetas .item-group{
         display: flex;
         flex-flow: row wrap;
         justify-content: center;

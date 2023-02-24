@@ -4,10 +4,7 @@
     background-color: $color-1;
 }
 
-//REVISAR
-.pie{
-    background-color: none;
-}
+
 
 main.bienvenidos{
     @include estructura;
@@ -17,20 +14,24 @@ main.bienvenidos{
     background-color: rgb(241, 236, 236);
     border-radius: 20px;
 
-    h1{
-        font-size: $icono-chico;
-    }
-    h2{
-        font-size: 30px;
-    }
+    div{
+            h1{
+                font-size: $icono-chico;
+            }
+            h2{
+                font-size: 30px;
+            }
 
-    p{
-        font-size:$icono;
-        padding:$left;
-        padding-bottom: 2em;
-        margin: 1em;
-    }
+            p{
+                font-size:$icono;
+                padding:$left;
+                padding-bottom: 2em;
+                margin: 1em;
+                text-align: center;
+            }
+        }
 }
+
 @media screen and (min-width: 767px){
     main.bienvenidos{
 
@@ -38,18 +39,19 @@ main.bienvenidos{
     margin-top:5em;
     margin: auto;
 
-    h1{
-        font-size: 70px;
-    }
-    h2{
-        font-size: 60px;
-    }
+    div{
+            h1{
+                font-size: 70px;
+            }
+            h2{
+                font-size: 60px;
+            }
 
-    p{
-        font-size:50px;
+            p{
+                font-size:50px;
+            }
+        }
     }
-    }
-
 }
 @media screen and (min-width: $desktop){
     main.bienvenidos{

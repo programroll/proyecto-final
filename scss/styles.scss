@@ -6,6 +6,8 @@
 @import "biografia";
 @import "accesorios";
 @import "contacto";
+@import '../node_modules/@animxyz/core/src/animxyz.scss';
+@include xyz-all;
 
 
 

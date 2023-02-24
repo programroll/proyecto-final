@@ -9,15 +9,11 @@ body{
 
     background-image: url(../img/patitas.png);
     font-family: $fuentePrincipal;
-    //cursor: url(../img/cursor.png), auto;
 }
 
 a{
     text-decoration: none;
-}/*
-.bg-body-tertiary {
-    background-color: none !important; 
-}*/
+}
 
 .navbar{
     width: 100%;
@@ -77,7 +73,20 @@ h1{
     text-align: center;
     font-size: $icono-chico;
     text-shadow: 2px 1px 4px  $color-5;
+    animation-duration: 2s;
+    animation-name: aparecer;
+    animation-iteration-count:initial;
 }
+
+@keyframes aparecer {
+    0% {
+    opacity: 0;
+    }
+    100% {
+    opacity: 1;
+    }
+}
+
 
 h2{
     padding: 10px 20px;
@@ -132,21 +141,36 @@ transition: 0.5s;
 
 /*todos los footer*/
 footer{
-    background-color: rgb(39, 36, 36);
     width: 100%;
     font-size: medium;
     padding: 8px;
+    @include estructura;
+
+    div{
+        a{
+        color: $color-3;
+        text-decoration: none;
+        font-style:normal;
+        font-weight: bold;
+        }
+
+        div.redes{
+            text-align: center;
+        }
+    }
 }
-
-.opciones{
-
-    color: $color-2;
-    text-decoration: none;
-    font-style:normal;
-    font-weight: bold;
+@media (min-width: $tablet){
+    div.redes{
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: end;
+        justify-content: space-evenly;
+        width: 100%;
+    }
 }
-
-.opciones a{
-    color: $color-2;
+@media screen and (min-width:$desktopXG) {
+    div.redes{
+        width: $desktopXG ;
+    }
+    
 }
-
